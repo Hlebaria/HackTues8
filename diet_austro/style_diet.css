@@ -41,7 +41,7 @@ a:active{
     background-color: #6321BF;
 }
 form {
-    text-shadow: 1px 1px 4px white;
+    text-shadow: 1px 1px 4px black;
 }
 h1{
     margin: 5%;
@@ -70,7 +70,7 @@ body{
 
 .questions{
     padding-top: 5%;
-    background-color: #0F0F85;
+    background-color:  #6321BF;
 }
 
 .kilog{
@@ -82,8 +82,10 @@ body{
 
 label{
     font-size: 30px;
+    color:white;
 }
 p{
-    text-shadow: 1px 1px 3px white;
+    text-shadow: 1px 1px 3px black;
     font-size:22px;
+    color: white;
 }
