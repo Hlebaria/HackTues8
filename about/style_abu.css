@@ -83,3 +83,16 @@ pre {
     color: white;
     text-align: end;
 }
+
+#elsys{
+    padding: 0;
+    font-size: 20;
+    color: #dd99ff;
+    background-color: none;
+}
+
+#contacts{
+    color: grey;
+    font-size: 15;
+    text-align: center;
+}
