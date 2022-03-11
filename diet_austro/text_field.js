@@ -1,7 +1,5 @@
 var diet_answers = []
-function Answers(questions, answer) {
-        diet_answers[questions] = answer
-        if (diet_answers[questions]==0){
-            console.log("Answer");
-        }
+function Answers(n_question, answer) {
+        diet_answers[n_question] = answer
+        console.log(answer);
 }

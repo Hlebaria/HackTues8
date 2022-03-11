@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="style_diet.css">
     </head>
-    <body onload="myFunction()">
+    <body">
         <ul>
             <li><a id="hp"href="../home_page/home_page.html">Home Page</a></li>
             <li><a id="da"href="../diet_austro/diet_austro.html">Austronaout Diet</a></li>
@@ -27,12 +27,12 @@
 
         <div id ="questionsWrapper" class = "questions">
             <form name = "textbox">
-                <label for="kilograms">Tell me your weight:</label>
-                <input type="number" name="kilograms" placeholder="Type your weight here..." maxlength="3"><br>
-                <label for="kilograms">Tell me your height:</label>
-                <input type="number" name="height" placeholder="Type your height here..." maxlength="3"><br>
-                <label for="kilograms">Tell me your age:</label>
-                <input type="number" name="age" placeholder="Type your age here..." maxlength="3"><br>
+                <label>Tell me your weight:</label>
+                <input id = "idKilograms" type="number" name="kilograms" placeholder="Type your weight here..." maxlength="3" value=""><br>
+                <label>Tell me your height:</label>
+                <input id = "idHeight" type="number" name="height" placeholder="Type your height here..." maxlength="3" value=""><br>
+                <label>Tell me your age:</label>
+                <input id = "idAge" type = "number" name="age" placeholder="Type your age here..." maxlength="3" value=""><br>
             </form>
             <p>What is your gender:</p>
             <form>
@@ -53,9 +53,9 @@
                 <label for="Eggs">Peanuts</label><br>
                 <input type="checkbox" id="Soy" name="Soy" value="Soy" onclick="Answers(10, 1)">
                 <label for="Eggs">Soy</label><br>
-                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts" onclick="Answers(11, 1)>
+                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts" onclick="Answers(11, 1)">
                 <label for="Eggs">Tree nuts</label><br>
-                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(12, 1)>
+                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(12, 1)">
                 <label for="Eggs">Wheat</label><br>
                 <input type="submit" name="submitbutton">
             </form>
