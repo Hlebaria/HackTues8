@@ -28,6 +28,9 @@ a {
 a:hover {
     background-color: blueviolet;
 }
-img {
-    background-size: cover;
+a:active{
+    background-color: aqua;
+}
+#dga{
+    background-color: #A8C8E9;
 }
