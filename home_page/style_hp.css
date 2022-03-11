@@ -47,11 +47,12 @@ pre{
     text-shadow: 1px 1px blue;
 
 }
+div {
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 1px;
+}
 img {
     width: 62px;
     height: 62px;
-    text-align: center;
-}
-#littleright {
-    margin-left: 14px;
 }
