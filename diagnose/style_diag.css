@@ -34,3 +34,10 @@ a:active{
 #dga{
     background-color: #A8C8E9;
 }
+pre{
+    background-color: #dd99ff;
+    height: 30px;
+    text-shadow: 0.5px 0.5px darkblue;
+    font-size: 20px;
+    text-align: center;
+}
