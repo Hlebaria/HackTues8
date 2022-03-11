@@ -4,7 +4,7 @@ html, body{
 }
 ul {
     list-style-type: none;
-    background-color: #dd99ff;
+    background-color: rgb(44,23,83);
     margin-top: 0;
     padding: 0;
     font-size: 0;
@@ -38,7 +38,7 @@ a:active{
 .intro{
     margin: 5%;
     border-radius: 25px;
-    background-color: #6321BF;
+    background-color: rgb(155, 48, 128);
 }
 form {
     text-shadow: 1px 1px 4px white;
@@ -65,12 +65,12 @@ pre{
 }
 
 body{
-    background-color: #0F0F85;
+    background-color: rgb(153,120, 168);
 }
 
 .questions{
     padding-top: 5%;
-    background-color: #0F0F85;
+    background-color: rgb(63, 93, 149);
 }
 
 .kilog{
