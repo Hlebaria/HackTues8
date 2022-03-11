@@ -4,7 +4,7 @@ html, body{
 }
 ul {
     list-style-type: none;
-    background-color: rgb(44,23,83);
+    background-color: rgb(44,23,83) ;
     margin-top: 0;
     padding: 0;
     font-size: 0;
@@ -47,10 +47,10 @@ pre{
     text-shadow: 1px 1px blue;
 
 }
-div {
+#rocket {
     text-align: center;
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 img {
     width: 62px;
