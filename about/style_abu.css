@@ -5,6 +5,7 @@ html, body{
 ul {
     list-style-type: none;
     background-color: rgb(44,23,83);
+    opacity: 0.8;
     margin-top: 0;
     padding: 0;
     font-size: 0;
@@ -68,7 +69,6 @@ body{
 }
 #img {
     text-align: center;
-    max-width: 100%;
 }
 img {
     width: 600px;
