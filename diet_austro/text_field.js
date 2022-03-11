@@ -1,7 +1,7 @@
 var gender;
 function calculate_cal() {
-    var inputWeg = document.getElementById("Weight").value;
-    alert(inputVal);
+    let inputWeg = document.getElementById("Weight").value;
+    alert(inputWeg);
   }
 var diet_answers = []
 function Answers(questions, answer) {
