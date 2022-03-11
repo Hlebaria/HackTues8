@@ -1,1 +1,5 @@
-//use this to save the input info
+var gender;
+function calculate_cal() {
+    var inputWeg = document.getElementById("Weight").value;
+    console.log("Soso");
+  }
