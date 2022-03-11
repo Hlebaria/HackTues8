@@ -4,7 +4,7 @@ html, body{
 }
 ul {
     list-style-type: none;
-    background-color: rgb(44,23,83);
+    background-color:rgb(44,23,83) ;
     margin-top: 0;
     padding: 0;
     font-size: 0;
@@ -71,7 +71,10 @@ body{
 .questions{
     padding-top: 5%;
     background-color:  #6321BF;
+<<<<<<< HEAD
     background-color: rgb(63, 93, 149);
+=======
+>>>>>>> 59264e0d4d80ba808f66a028030cee043c6d2d5e
 }
 
 .kilog{
