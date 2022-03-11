@@ -34,3 +34,31 @@ a:active{
 #da{
     background-color: #A8C8E9;
 }
+
+.intro{
+    margin: 5%;
+    border-radius: 25px;
+    background-color: #dd99ff;
+}
+
+h1{
+    margin: 5%;
+    font-family: Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.intru{
+    margin: 3%;
+}
+
+pre{
+    color: white;
+    text-align: center;
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: grey;
+}
