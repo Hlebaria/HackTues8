@@ -36,10 +36,15 @@
             </form>
             <p>What is your gender:</p>
             <form>
-                <input type="radio" id="Male" name="Male" value="Male">
-                <label for="Male">Male</label><br>
-                <input type="radio" id="Female" name="Female" value="Female">
-                <label for="Female">Female</label><br>
+                <input type="radio" list="choice" id="Male" name="Male" value="Male">
+                <!--label for="Male">Male</label><br-->
+                <datalist id="choice">
+                    <option value="Men">
+                    <option value="Female">
+                </datalist>
+                <!--input type="radio" list="coise1" id="Female" name="Female" value="Female">
+                <label for="Female">Female</label><br-->
+                
             </form>
             <p>Mark your allergies:</p>
             <form>
@@ -57,7 +62,8 @@
                 <label for="Eggs">Tree nuts</label><br>
                 <input type="checkbox" id="Wheat" name="Wheat" value="Wheat">
                 <label for="Eggs">Wheat</label><br>
-                <input type="submit" name="submitbutton">
+                <br>
+                <input type="submit" name="Submit">
             </form>
         </div>
         <div class="box1"></div>
