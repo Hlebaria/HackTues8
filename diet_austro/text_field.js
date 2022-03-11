@@ -15,3 +15,7 @@ function Answers(questions, answer) {
             console.log("Answer");
         }
 }
+
+function Button(){
+
+}
