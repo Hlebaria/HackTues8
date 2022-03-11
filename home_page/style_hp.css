@@ -4,7 +4,7 @@ html, body{
 }
 ul {
     list-style-type: none;
-    background-color: #dd99ff;
+    background-color: rgb(44,23,83) ;
     margin-top: 0;
     padding: 0;
     font-size: 0;
@@ -48,9 +48,11 @@ pre{
 
 }
 #rocket {
-    width: 62px;
-    height: 62px;
     text-align: center;
     margin-left: 5px;
-    margin-right: px;
+    margin-right: 5px;
+}
+img {
+    width: 62px;
+    height: 62px;
 }
