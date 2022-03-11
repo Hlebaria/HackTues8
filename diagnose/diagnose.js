@@ -4,15 +4,12 @@ for (var i = 0; i < 15; i++){
     list_of_answers[i] = 0
 }
 
-function getAnwers(id, checked) {
-    console.log(checked)
-    if(checked){
-        var answer = id.charAt(0) === "y" ? 1 : 0 
-        var tempId = id.substring(1)
-        var n_question = parseInt(tempId)
-        console.log(n_question, answer)
-        list_of_answers[n_question - 1] = answer
-    }
+function getAnwers(id) {
+    var answer = id.charAt(0) === "y" ? 1 : 0 
+    var tempId = id.substring(1)
+    var n_question = parseInt(tempId)
+    console.log(n_question, answer)
+    list_of_answers[n_question - 1] = answer
 }
 
 function diagnose(){
