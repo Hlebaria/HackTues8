@@ -8,7 +8,6 @@ function Answers(n_question, answer) {
         diet_answers[n_question] = answer
         console.log(answer);
 }
-
 function Button(){
-
+    alert("uga buga");
 }
