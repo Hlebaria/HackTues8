@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style_diet.css">
+        <script src="text_field.js"></script>
     </head>
     <body">
         <ul>
@@ -35,8 +36,8 @@
             </form>
             <p>What is your gender:</p>
             <form>
-                <input type="radio" list="choice" id="Male" name="Male" value="Male">
-                <!--label for="Male">Male</label><br-->
+                <!--input list="choice" id="Male" name="Male" value="Male">
+                <label for="Male">Male</label><br-->
                 <datalist id="choice">
                     <option value="Men">
                     <option value="Female">
@@ -44,7 +45,7 @@
                 <!--input type="radio" list="coise1" id="Female" name="Female" value="Female">
                 <label for="Female">Female</label><br-->
                 <select name="gender" id="select_g">
-                    <option value="" disabled selected hidden>--Please choose an option--</option>
+                    <option value="" disabled selected hidden><i>Please choose an option<i></option>
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
