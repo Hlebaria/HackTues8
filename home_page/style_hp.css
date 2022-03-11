@@ -8,7 +8,6 @@ ul {
     margin-top: 0;
     padding: 0;
     font-size: 0;
-    position: fixed;
 }
 li{
     display: inline-block;
@@ -34,4 +33,17 @@ a:active{
 }
 #hp{
     background-color: #A8C8E9;
+}
+pre{
+    color: white;
+    font-family: Comic Sans MS, Comic Sans, cursive	;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #A8C8E9;
+    font-family: Serif;
+    text-shadow: 1px 1px blue;
+
 }
