@@ -37,10 +37,10 @@ a:active{
 pre{
     background-color: #A8C8E9;
     height: 40px;
-    text-shadow: 0.5px 0.5px darkblue;
+    text-shadow: 0.8px 0.8px darkblue;
     font-size: 20px;
     border-style: dotted;
-    border-color: purple;
+    border-color: darkblue;
     font-family: Serif;
     padding-top: 14px;
 }
@@ -48,10 +48,9 @@ pre{
 input, label{
     text-shadow: 0.5px 0.5px darkblue;
     font-size: 20px;
-    background-color: #dd99ff;
 }
 body {
-    background-color: #dd99ff;
+    background-color: rgb(63, 93, 149);
 }
 button {
     width: 80px;

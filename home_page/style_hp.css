@@ -56,3 +56,8 @@ img {
     width: 62px;
     height: 62px;
 }
+body {
+    background-color: rgb(153,120, 168);
+    background-image: url('space.png');
+    background-repeat: no-repeat;
+}

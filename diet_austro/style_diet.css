@@ -38,10 +38,11 @@ a:active{
 .intro{
     margin: 5%;
     border-radius: 25px;
-    background-color: rgb(155, 48, 128);
+    background-color: #2B042A;
 }
 form {
     text-shadow: 1px 1px 4px black;
+    margin-bottom: 0;
 }
 h1{
     margin: 5%;
@@ -65,11 +66,9 @@ pre{
 }
 
 body{
-    background-image: url(space.png);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: rgb(153,120, 168);
+    background-image: url('space.png');
+    background-repeat: no-repeat;
 }
 
 .questions{
@@ -91,6 +90,15 @@ p{
     font-size:22px;
     color: white;
 }
-.box1{
-    margin-bottom: 100px;
+div {
+    margin-bottom: 0;
+}
+button {
+    font-size: 20px;
+    font-family: Serif;
+    text-shadow: 0.8px 0.8px darkblue;
+    border-style: double;
+    border-color:blue;
+    width: 90px;
+    height: 50px;
 }
