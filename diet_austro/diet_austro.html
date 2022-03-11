@@ -3,7 +3,7 @@
     <head>
         <link rel="stylesheet" href="style_diet.css">
     </head>
-    <body onload="myFunction()">
+    <body">
         <ul>
             <li><a id="hp"href="../home_page/home_page.html">Home Page</a></li>
             <li><a id="da"href="../diet_austro/diet_austro.html">Astronaut Diet</a></li>
@@ -27,10 +27,10 @@
         <div id ="questionsWrapper" class = "questions">
             <form name = "textbox">
                 <label for="kilograms">Tell me your weight:</label>
-                <input id="myInput"type="number" name="kilograms" placeholder="Type your weight here..." maxlength="3"><br>
-                <label for="kilograms">Tell me your height:</label>
+                <input type="number" name="kilograms" placeholder="Type your weight here..." maxlength="3" id="Weight" onclick="calculate_cal"();><br>
+                <label for="height">Tell me your height:</label>
                 <input type="number" name="height" placeholder="Type your height here..." maxlength="3"><br>
-                <label for="kilograms">Tell me your age:</label>
+                <label for="age">Tell me your age:</label>
                 <input type="number" name="age" placeholder="Type your age here..." maxlength="3"><br>
             </form>
             <p>What is your gender:</p>
@@ -43,26 +43,29 @@
                 </datalist>
                 <!--input type="radio" list="coise1" id="Female" name="Female" value="Female">
                 <label for="Female">Female</label><br-->
-                
+                <select name="gender" id="select_g">
+                    <option value="" disabled selected hidden>--Please choose an option--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
             </form>
             <p>Mark your allergies:</p>
             <form>
                 <input type="checkbox" id="Eggs" name="Eggs" value="Eggs">
                 <label for="Eggs">Eggs</label><br>
-                <input type="checkbox" id="Lactose" name="Lactose" value="Lactose">
-                <label for="Eggs">Lactose</label><br>
-                <input type="checkbox" id="Fish" name="Fish" value="Fish">
-                <label for="Eggs">Fish</label><br>
-                <input type="checkbox" id="Peanuts" name="Peanuts" value="Peanuts">
-                <label for="Eggs">Peanuts</label><br>
-                <input type="checkbox" id="Soy" name="Soy" value="Soy">
-                <label for="Eggs">Soy</label><br>
-                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts">
-                <label for="Eggs">Tree nuts</label><br>
-                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat">
-                <label for="Eggs">Wheat</label><br>
-                <br>
-                <input type="submit" name="Submit">
+                <input type="checkbox" id="Lactose" name="Lactose" value="Lactose" onclick="Answers(6, 1)">
+                <label for="Lactose">Lactose</label><br>
+                <input type="checkbox" id="Fish" name="Fish" value="Fish" onclick="Answers(7, 1)">
+                <label for="Fish">Fish</label><br>
+                <input type="checkbox" id="Peanuts" name="Peanuts" value="Peanuts" onclick="Answers(8, 1)">
+                <label for="Peanuts">Peanuts</label><br>
+                <input type="checkbox" id="Soy" name="Soy" value="Soy" onclick="Answers(9, 1)">
+                <label for="Soy">Soy</label><br>
+                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts" onclick="Answers(10, 1)">
+                <label for="Tree nuts">Tree nuts</label><br>
+                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(11, 1)">
+                <label for="Wheat">Wheat</label><br>
+                <button type="button" onclick="Button()"><strong>Submit</strong></button>
             </form>
         </div>
         <div class="box1"></div>

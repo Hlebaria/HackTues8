@@ -18,13 +18,15 @@ function getAnwers(id) {
 function diagnose(){
     var score = 0
     var scoreTo6 = 0
-    for(var i = 0; i<14; i++){
+    for(var i = 0; i<15; i++){
         console.log(i)
         score = score + list_of_answers[i]
-        if (i === 4 && score >= 2){
-            var validation = document.createElement("p")
-            validation.textContent = "Може да имаш злокачествени образувания"
-            console.log("prowrerka1")
+        if (i === 4){
+            if(score >= 2){
+                var validation = document.createElement("p")
+                validation.textContent = "Може да имаш злокачествени образувания"
+                console.log("prowrerka1")
+            }
             score = 0
         }
         if (i === 6) scoreTo6 = score
