@@ -51,6 +51,9 @@ h1{
 
 body{
     background-color: #DCD9D9;
+    background-color: rgb(153,120, 168);
+    background-image: url('space.png');
+    background-repeat: no-repeat;
 }
 
 .AUtext{
