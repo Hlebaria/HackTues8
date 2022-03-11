@@ -38,11 +38,14 @@ a:active{
 .intro{
     margin: 5%;
     border-radius: 25px;
-    background-color: #dd99ff;
+    background-color: #6321BF;
 }
-
+form {
+    text-shadow: 1px 1px 4px white;
+}
 h1{
     margin: 5%;
+    text-shadow: 3px 3px 6px black;
     font-family: Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
@@ -55,18 +58,19 @@ h1{
 
 pre{
     color: white;
+    text-shadow: 1px 1px black;
     text-align: center;
     font-family: Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
 
 body{
-    background-color: grey;
+    background-color: #0F0F85;
 }
 
 .questions{
     padding-top: 5%;
-    background-color: #dd99ff;
+    background-color: #0F0F85;
 }
 
 .kilog{
@@ -74,4 +78,12 @@ body{
 }
 .box1{
     margin-bottom: 50px;
+}
+
+label{
+    font-size: 30px;
+}
+p{
+    text-shadow: 1px 1px 3px white;
+    font-size:22px;
 }
