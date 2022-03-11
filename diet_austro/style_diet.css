@@ -65,7 +65,11 @@ pre{
 }
 
 body{
-    background-color: rgb(153,120, 168);
+    background-image: url(space.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .questions{
