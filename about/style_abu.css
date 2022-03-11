@@ -39,29 +39,40 @@ h1{
     color: white;
     text-align: center;
     font-family: Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px blueviolet;
+    font-size: 30px;
 }
 
 .headAU{
-    margin: 5%;
+    margin: 20px;
     background-color: #dd99ff;
-    border-radius: 25px;
+    border-radius: 60px;
 }
 
 body{
-    background-color: grey;
+    background-color: #DCD9D9;
 }
 
 .AUtext{
     background-color: #dd99ff;
+    margin-left: 0;
+    margin-right: 0;
 }
-
+#img {
+    text-align: center;
+    max-width: 100%;
+}
+img {
+    width: 600px;
+    height: 400px;
+}
 pre {
     color: black;
     font-family: Geneva, Verdana, sans-serif;
-    margin-top: 5%;
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-bottom: 5%;
+    margin-left: 0;
+    margin-right: 0;
     text-align: center;  
     background-color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px darkblue;
 }
