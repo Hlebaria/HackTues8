@@ -70,18 +70,12 @@ body{
 
 .questions{
     padding-top: 5%;
-<<<<<<< HEAD
     background-color:  #6321BF;
-=======
     background-color: rgb(63, 93, 149);
->>>>>>> 9d5844681c850433e62a196c6ca54d895293bf14
 }
 
 .kilog{
     padding-left: 4%;
-}
-.box1{
-    margin-bottom: 50px;
 }
 
 label{
