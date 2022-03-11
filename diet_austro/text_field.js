@@ -4,16 +4,9 @@ function calculate_cal() {
     alert(inputWeg);
   }
 var diet_answers = []
-
-for(var i = 0; i < 12; i++){
-    diet_answers[i] = 0
-}
-
-function Answers(questions, answer) {
-        diet_answers[questions] = answer
-        if (diet_answers[questions]==1){
-            console.log("Answer");
-        }
+function Answers(n_question, answer) {
+        diet_answers[n_question] = answer
+        console.log(answer);
 }
 
 function Button(){
