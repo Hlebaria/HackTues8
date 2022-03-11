@@ -18,7 +18,7 @@
             </h1>
             <br>
         </div>
-        <div >
+        <div>
             <pre id="startText">
                 To use our product, simply input the desired information below
                 and the system will automatically generate a suitable one week diet plan just for you!
@@ -36,31 +36,32 @@
             </form>
             <p>What is your gender:</p>
             <form>
-                <input type="radio" id="Male" name="Male" value="Male">
+                <input type="radio" id="Male" name="Male" value="Male" onclick="Answears(4, 1)">
                 <label for="Male">Male</label><br>
-                <input type="radio" id="Female" name="Female" value="Female">
+                <input type="radio" id="Female" name="Female" value="Female" onclick="Answers(5, 1)">
                 <label for="Female">Female</label><br>
             </form>
             <p>Mark your allergies:</p>
             <form>
-                <input type="checkbox" id="Eggs" name="Eggs" value="Eggs">
+                <input type="checkbox" id="Eggs" name="Eggs" value="Eggs" onclick="Answers(6, 1)">
                 <label for="Eggs">Eggs</label><br>
-                <input type="checkbox" id="Lactose" name="Lactose" value="Lactose">
+                <input type="checkbox" id="Lactose" name="Lactose" value="Lactose" onclick="Answers(7, 1)">
                 <label for="Eggs">Lactose</label><br>
-                <input type="checkbox" id="Fish" name="Fish" value="Fish">
+                <input type="checkbox" id="Fish" name="Fish" value="Fish" onclick="Answers(8, 1)">
                 <label for="Eggs">Fish</label><br>
-                <input type="checkbox" id="Peanuts" name="Peanuts" value="Peanuts">
+                <input type="checkbox" id="Peanuts" name="Peanuts" value="Peanuts" onclick="Answers(9, 1)">
                 <label for="Eggs">Peanuts</label><br>
-                <input type="checkbox" id="Soy" name="Soy" value="Soy">
+                <input type="checkbox" id="Soy" name="Soy" value="Soy" onclick="Answers(10, 1)">
                 <label for="Eggs">Soy</label><br>
-                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts">
+                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts" onclick="Answers(11, 1)>
                 <label for="Eggs">Tree nuts</label><br>
-                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat">
+                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(12, 1)>
                 <label for="Eggs">Wheat</label><br>
                 <br>
                 <input type="submit" name="submitbutton">
             </form>
         </div>
         <div class="box1"></div>
+        <script src="text_field.js"></script>
     </body>
 </html>
