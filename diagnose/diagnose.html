@@ -4,18 +4,89 @@
         <link rel="stylesheet" href="style_diag.css">
         <script type="text/javascript" src="diagnose.js"></script>
     </head>
-    <body onLoad="">
+    <body>
         <ul>
             <li><a id="hp"href="../home_page/home_page.html">Home Page</a></li>
             <li><a id="da"href="../diet_austro/diet_austro.html">Austronaout Diet</a></li>
             <li><a id="dga"href="../diagnose/diagnose.html">Austronaout Diagnose</a></li>
             <li><a id="abu"href="../about/about.html">About Us</a></li>
         </ul>
+        <script type="text/javascript" src="diagnose.js"></script>
         <pre>That is the Austranout Page page!</pre>
-        <pre> Изпитвате ли слабост в долните крайници?</pre>
-        <input type="checkbox" answer_yes="yes" answer_no="no">
+        <pre> Имате ли упорита кашлица и/или прегракналост?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(0, 1)">
         <label for="yes"> yes</label><br>
-        <input type="checkbox" answer_yes="yes" answer_no="no">
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(0, 0)">
+        <label for="no"> no</label><br>
+        <pre> Изпивате ли трудност при преглъщане?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(1, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(1, 0)">
+        <label for="no"> no</label><br>
+        <pre> Често ли се променяте навиците си за уриниране?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(2, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(2, 0)">
+        <label for="no"> no</label><br>
+        <pre> Имате ли кожни проблеми или промяна в цвета на банките?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(3, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(3, 0)">
+        <label for="no"> no</label><br>
+        <pre> Изпитвате ли проблеми с дишането или затруднено такова?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(4, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(4, 0)">
+        <label for="no"> no</label><br>
+        <pre> Изпитвате ли слабост в долните крайници?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(5, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(5, 0)">
+        <label for="no"> no</label><br>
+        <pre> Изпитвате ли изтръпване при клепачите?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(6, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(6, 0)">
+        <label for="no"> no</label><br>
+        <pre> Имате ли проблеми с движението(проблеми с централната нервна система)?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(7, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(7, 0)">
+        <label for="no"> no</label><br>
+        <pre> Имате ли проблеми с психичното здраве(проблеми с централната нервна система)?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(8, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(8, 0)">
+        <label for="no"> no</label><br>
+        <pre> Имате ли промяна в стойката?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(9, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(9, 0)">
+        <label for="no"> no</label><br>
+        <pre> Имате ли покачване на сърдечния ритъм?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(10, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(10, 0)">
+        <label for="no"> no</label><br>
+        <pre> При изправяне имате ли припадъци или причерняване при изправяне?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(11, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(11, 0)">
+        <label for="no"> no</label><br>
+        <pre> Имате ли нарушено кръвообращение?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(12, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(12, 0)">
+        <label for="no"> no</label><br>
+        <pre> Имате ли диария или повръщане?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(13, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(13, 0)">
+        <label for="no"> no</label><br>
+        <pre>  Имате ли сърдечни болести?</pre>
+        <input type="checkbox" answer_yes="yes" answer_no="no" onclick="getAnwers(14, 1)">
+        <label for="yes"> yes</label><br>
+        <input type="checkbox" answer_yes="yes" answer_no="no"  onclick ="getAnwers(14, 0)">
         <label for="no"> no</label><br>
     </body>
 </html>

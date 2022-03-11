@@ -34,3 +34,41 @@ a:active{
 #da{
     background-color: #A8C8E9;
 }
+
+.intro{
+    margin: 5%;
+    border-radius: 25px;
+    background-color: #dd99ff;
+}
+
+h1{
+    margin: 5%;
+    font-family: Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.intru{
+    margin: 3%;
+}
+
+pre{
+    color: white;
+    text-align: center;
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: grey;
+}
+
+.questions{
+    padding-top: 5%;
+    background-color: #dd99ff;
+}
+
+.kilog{
+    padding-left: 4%;
+}
