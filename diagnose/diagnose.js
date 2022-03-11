@@ -20,7 +20,9 @@ function diagnose(){
         score = score + list_of_answers[i]
         if (i === 4){
             if(score >= 2){
-                appendValidation("Може да имаш злокачествени образувания")
+                var validation = document.createElement("p")
+                validation.textContent = "diagnose"
+                document.body.appendChild(validation)
                 console.log("prowrerka1")
             }
             score = 0
