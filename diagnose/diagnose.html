@@ -2,7 +2,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="style_diag.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript" src="diagnose.js"></script>
+        <title>Healthly in space</title>
     </head>
     <body>
         <ul>
@@ -11,7 +13,9 @@
             <li><a id="dga"href="../diagnose/diagnose.html">Astronaut Diagnose</a></li>
             <li><a id="abu"href="../about/about.html">About Us</a></li>
         </ul>
+        <h1>Diagnostic</h1>
         <script type="text/javascript" src="diagnose.js"></script>
+        <div>
         <pre> Do you have a persistent cough and / or wheezing?</pre>
         <input id = "y1" type="radio" name = "question1" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
         <label for="yes"> yes</label><br>
@@ -89,5 +93,7 @@
         <label for="no"> no</label><br>
         <br>
         <button onclick="diagnose()">Submit</button>
+        <br>
+        </div>
     </body>
 </html>

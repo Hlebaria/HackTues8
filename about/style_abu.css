@@ -41,10 +41,16 @@ h1{
     font-family: Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px blueviolet;
     font-size: 40px;
+    background-color: #2B042A;
+    padding: 30px;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .headAU{
-    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
     background-color: #2B042A;
     border-radius: 60px;
 }
@@ -71,8 +77,8 @@ img {
 pre {
     color: black;
     font-family: Geneva, Verdana, sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
     text-align: center;  
     background-color: white;
     font-size: 20px;
@@ -98,6 +104,7 @@ pre {
 }
 
 #contacts{
+    margin-top:0;
     color: grey;
     font-size: 15;
     text-align: center;
