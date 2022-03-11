@@ -20,15 +20,14 @@
         </div>
         <div>
             <pre id="startText">
-                    To use our product, simply input the desired information below
-                 and the system will automatically generate a suitable one week diet plan just for you!
+                To use our product, simply input the desired information below
+                and the system will automatically generate a suitable one week diet plan just for you!
             </pre>
         </div>
-
         <div id ="questionsWrapper" class = "questions">
             <form name = "textbox">
                 <label for="kilograms">Tell me your weight:</label>
-                <input type="number" name="kilograms" placeholder="Type your weight here..." maxlength="3"><br>
+                <input type="number" name="kilograms" placeholder="Type your weight here..." maxlength="3" id="Weight" onclick="calculate_cal"();><br>
                 <label for="kilograms">Tell me your height:</label>
                 <input type="number" name="height" placeholder="Type your height here..." maxlength="3"><br>
                 <label for="kilograms">Tell me your age:</label>
@@ -57,6 +56,7 @@
             <form>
                 <input type="checkbox" id="Eggs" name="Eggs" value="Eggs" onclick="Answers(5, 1)">
                 <label for="Eggs">Eggs</label><br>
+<<<<<<< HEAD
                 <input type="checkbox" id="Lactose" name="Lactose" value="Lactose" onclick="Answers(6, 1)">
                 <label for="Lactose">Lactose</label><br>
                 <input type="checkbox" id="Fish" name="Fish" value="Fish" onclick="Answers(7, 1)">
@@ -69,6 +69,21 @@
                 <label for="Tree nuts">Tree nuts</label><br>
                 <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(11, 1)">
                 <label for="Wheat">Wheat</label><br>
+=======
+                <input type="checkbox" id="Lactose" name="Lactose" value="Lactose" onclick="Answers(7, 1)">
+                <label for="Eggs">Lactose</label><br>
+                <input type="checkbox" id="Fish" name="Fish" value="Fish" onclick="Answers(8, 1)">
+                <label for="Eggs">Fish</label><br>
+                <input type="checkbox" id="Peanuts" name="Peanuts" value="Peanuts" onclick="Answers(9, 1)">
+                <label for="Eggs">Peanuts</label><br>
+                <input type="checkbox" id="Soy" name="Soy" value="Soy" onclick="Answers(10, 1)">
+                <label for="Eggs">Soy</label><br>
+                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts" onclick="Answers(11, 1)>
+                <label for="Eggs">Tree nuts</label><br>
+                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(12, 1)>
+                <label for="Eggs">Wheat</label><br>
+                <br>
+>>>>>>> 61bb7cd109d93d77acc125ad0fdac403555966d5
                 <input type="submit" name="submitbutton">
             </form>
         </div>

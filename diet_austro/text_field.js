@@ -1,3 +1,8 @@
+var gender;
+function calculate_cal() {
+    let inputWeg = document.getElementById("Weight").value;
+    alert(inputWeg);
+  }
 var diet_answers = []
 
 for(var i = 0; i < 12; i++){
