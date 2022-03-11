@@ -33,17 +33,43 @@
                 <label for="kilograms">Tell me your age:</label>
                 <input type="number" name="age" placeholder="Type your age here..." maxlength="3"><br>
             </form>
-            <p>What is your gender:</p>
             <form>
+                <label for="gender">What's your gender:</label><br>
+                <!--input list="choosing_gender" id="gender" name="gender" />
+
+                <datalist id="choosing_gender">
+                    <option value="Male">
+                    <option value="Female">
+                </datalist>
                 <input type="radio" id="Male" name="Male" value="Male" onclick="Answears(4, 1)">
                 <label for="Male">Male</label><br>
                 <input type="radio" id="Female" name="Female" value="Female" onclick="Answers(5, 1)">
-                <label for="Female">Female</label><br>
+                <label for="Female">Female</label><br-->
+                <select name="gender" id="select_g">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
             </form>
+            
             <p>Mark your allergies:</p>
             <form>
-                <input type="checkbox" id="Eggs" name="Eggs" value="Eggs" onclick="Answers(6, 1)">
+                <input type="checkbox" id="Eggs" name="Eggs" value="Eggs" onclick="Answers(5, 1)">
                 <label for="Eggs">Eggs</label><br>
+<<<<<<< HEAD
+                <input type="checkbox" id="Lactose" name="Lactose" value="Lactose" onclick="Answers(6, 1)">
+                <label for="Lactose">Lactose</label><br>
+                <input type="checkbox" id="Fish" name="Fish" value="Fish" onclick="Answers(7, 1)">
+                <label for="Fish">Fish</label><br>
+                <input type="checkbox" id="Peanuts" name="Peanuts" value="Peanuts" onclick="Answers(8, 1)">
+                <label for="Peanuts">Peanuts</label><br>
+                <input type="checkbox" id="Soy" name="Soy" value="Soy" onclick="Answers(9, 1)">
+                <label for="Soy">Soy</label><br>
+                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="Tree nuts" onclick="Answers(10, 1)">
+                <label for="Tree nuts">Tree nuts</label><br>
+                <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(11, 1)">
+                <label for="Wheat">Wheat</label><br>
+=======
                 <input type="checkbox" id="Lactose" name="Lactose" value="Lactose" onclick="Answers(7, 1)">
                 <label for="Eggs">Lactose</label><br>
                 <input type="checkbox" id="Fish" name="Fish" value="Fish" onclick="Answers(8, 1)">
@@ -57,6 +83,7 @@
                 <input type="checkbox" id="Wheat" name="Wheat" value="Wheat" onclick="Answers(12, 1)>
                 <label for="Eggs">Wheat</label><br>
                 <br>
+>>>>>>> 61bb7cd109d93d77acc125ad0fdac403555966d5
                 <input type="submit" name="submitbutton">
             </form>
         </div>
