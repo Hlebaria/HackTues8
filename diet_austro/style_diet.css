@@ -46,6 +46,7 @@ h1{
     font-family: Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
+    font-size: 50px;
 }
 
 .intru{
@@ -61,4 +62,13 @@ pre{
 
 body{
     background-color: grey;
+}
+
+.questions{
+    padding-top: 5%;
+    background-color: #dd99ff;
+}
+
+.kilog{
+    padding-left: 4%;
 }
