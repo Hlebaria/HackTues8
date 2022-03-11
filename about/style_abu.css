@@ -69,8 +69,8 @@ img {
 pre {
     color: black;
     font-family: Geneva, Verdana, sans-serif;
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 20px;
+    margin-right: 20px;
     text-align: center;  
     background-color: white;
     font-size: 20px;
