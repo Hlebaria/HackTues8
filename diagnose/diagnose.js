@@ -1,9 +1,13 @@
 var list_of_answers = []
-function getAnwers(n_question, answer) {
+function getAnwers(id) {
         list_of_answers[n_question] = answer
         if (list_of_answers[n_question]==0){
             console.log("Answer");
         }
+}
+
+function test(id){
+    console.log(id)
 }
 
 function diagnose(){
