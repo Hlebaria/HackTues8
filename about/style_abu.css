@@ -34,3 +34,23 @@ a:active{
 #abu{
     background-color: #A8C8E9;
 }
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.headAU{
+    margin: 5%;
+    background-color: #dd99ff;
+    border-radius: 25px;
+}
+
+body{
+    background-color: grey;
+}
+
+.AUtext{
+    background-color: #dd99ff;
+}
