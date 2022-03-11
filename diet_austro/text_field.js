@@ -1,5 +1,1 @@
-function myFunction() {
-    var x = document.createElement("INPUT");
-    x.setAttribute("value", "");
-    document.getElementById("questionsWrapper").appendChild(x);
-  }
+//use this to save the input info
