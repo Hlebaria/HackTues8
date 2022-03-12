@@ -1,6 +1,6 @@
 var list_of_answers = []
 
-var modal = document.getElementById("myModal")
+var modal = document.getElementById("modalContent")
 
 function getAnwers(id) {
     var answer = id.charAt(0) === "y" ? 1 : 0 
