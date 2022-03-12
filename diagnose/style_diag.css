@@ -110,7 +110,7 @@ label {
 
 .modal {
     display: inline; 
-    position: fixed; 
+    position:absolute; 
     z-index: 0; 
     width: 100%; /* Full width */
     height: 100%; /* Full height */
