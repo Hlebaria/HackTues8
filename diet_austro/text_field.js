@@ -57,7 +57,7 @@ var desert = {
   orangejuice: 45
 }
 
-function Button(){
+function getPersonalInformation(){
 
       choices[0] = document.getElementById("Weight").value;
       choices[1] = document.getElementById("Height").value;
@@ -95,6 +95,6 @@ function Calculate_cal( W, H, A, G){
 }
 
 function Fiter( E, L, F, Pea, S, T, W, P){
-  var bbb = E + L + F + Pea + S + T + W + P
+  
   console.log(bbb);
 }
