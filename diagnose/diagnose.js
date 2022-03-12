@@ -20,21 +20,19 @@ function diagnose(){
         score = score + list_of_answers[i]
         if (i === 4){
             if(score >= 2){
-                var validation = document.createElement("p")
-                validation.textContent = "diagnose"
-                document.body.appendChild(validation)
+                appendValidation("You may have malignancies")
                 console.log("prowrerka1")
             }
             score = 0
         }
         if (i === 6) scoreTo6 = score
         if (i === 8 && score >= 2){
-            appendValidation("Може да имаш мускулна дистрофия")
+            appendValidation("you may suffer from muscular dystrophy")
             console.log("prowrerka2")
             score = score - scoreTo6
         }
         if (i === 14 && score >= 2){
-            appendValidation("Може да имаш ортостатичната хипотония")
+            appendValidation("You may have orthostatic hypotension")
             console.log("prowrerka3")
             score = 0
         }
