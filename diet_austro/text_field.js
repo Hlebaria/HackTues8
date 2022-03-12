@@ -16,71 +16,182 @@ var choices = {
 var breakfast = {
   tunafish: {
     calories: 86,
-    name: "tuna fish"
+    name: "tuna fish",
+    all: 3
   }, 
-  bacon:  417,
-  toast: 390,
-  cornflakes: 357,
-  fruitsalad: 30,
-  sausage: 287,
-  scrambledeggs: 212,
-  peaches: 39,
-  apricot: 48
+  bacon: {
+    clories: 417,
+    name: "bacon",
+    all: 0
+  },
+  toast: {
+    calories: 390,
+    name: "toast",
+    all: 7
+  },
+  cornflakes: {
+    calories: 357,
+    name: "cornflakes",
+    all: 0
+  },
+  fruitsalad: {
+    calories: 30,
+    name: "fruit salad",
+    all: 8
+  },
+  sausage: {
+    calories: 287,
+    name: "sausage",
+    all: 1
+  },
+  scrambledeggs: {
+    calories: 212,
+    name: "scrambled eggs",
+    all: 1
+  },
+  peaches: {
+    calories: 39,
+    name: "peaches",
+    all: 8
+  },
+  apricot: {
+    calories: 48,
+    name: "apricot",
+    all: 8
+  }
 }
 
 var lunch = {
-  chickensoup: 36,
-  tomatosoup: 54,
-  potatosoup: 91,
-  peasoup: 88,
-  bread: 267,
-  tortilla: 218,
-  peanutbutter: 598,
-  salame: 423
+  chickensoup: {
+    calories: 36,
+    name: "chicken soup",
+    all: 0
+  },
+  tomatosoup: {
+    calories: 54,
+    name: "tomato soup",
+    all: 0
+  },
+  potatosoup: {
+    calories: 91,
+    name: "potato soup",
+    all: 0
+  },
+  peasoup: {
+    calories: 88,
+    name: "pea soup",
+    all: 0
+  },
+  bread: {
+    calories: 267,
+    name: "bread",
+    all: 7
+  },
+  tortilla: {
+    calories: 218,
+    name: "tortilla",
+    all: 7
+  },
+  peanutbutter: {
+    calories: 598,
+    name: "peanutbutter",
+    all: 4
+  },
+  salame: {
+    calories: 423,
+    name: "salame",
+    all: 0
+  }
  }
 
 var dinner = {
-  beefjerky: 149,
-  cannedbeef: 246,
-  beefsteak: 183,
-  fish: 120,
-  meatballs: 188,
-  chickenwithrice: 24,
-  spaghettibolognese: 144
+  beefjerky: {
+    calories: 149,
+    name: "beef jerky",
+    all: 0
+  },
+  cannedbeef: {
+    calories: 246,
+    name: "canned beef",
+    all: 0
+  },
+  beefsteak: {
+    calories: 183,
+    name: "beef steak",
+    all: 0
+  },
+  fish: {
+    calories: 120,
+    name: "fish",
+    all: 3
+  },
+  meatballs: {
+    calories: 188,
+    name: "meatballs",
+    all: 1
+  },
+  chickenwithrice: {
+    calories: 24,
+    name: "chicken with rice",
+    all: 0
+  },
+  spaghettibolognese: {
+    calories: 144,
+    name: "spaghetti bolognese",
+    all: 1
+  }
 }
 
 var desert = {
-  brownie: 466,
-  jam: 278,
-  cafe: 90,
-  grapejuice: 63,
-  orangejuice: 45
+  brownie: {
+    calories: 466,
+    name: "brownie",
+    all: 2
+  },
+  jam: {
+    calories: 278,
+    name: "jam",
+    all: 8
+  },
+  cafe: {
+    calories: 90,
+    name: "coffee"
+  },
+  grapejuice: {
+    calories: 63,
+    name: "grape juice",
+    all: 8
+  },
+  orangejuice: {
+    calories: 45,
+    name: "orange juice",
+    all: 8
+  }
 }
 
 function getPersonalInformation(){
 
-      choices[0] = document.getElementById("Weight").value;
-      choices[1] = document.getElementById("Height").value;
-      choices[2] = document.getElementById("Age").value;
-      choices[3] = document.getElementById("gender").value;
-      choices[4] = document.getElementById("Eggs").value;
-      choices[5] = document.getElementById("Lactose").value;
-      choices[6] = document.getElementById("Fish").value;
-      choices[7] = document.getElementById("Peanuts").value;
-      choices[8] = document.getElementById("Soy").value;
-      choices[9] = document.getElementById("Tree nuts").value;
-      choices[10] = document.getElementById("Wheat").value;
-      choices[11] = document.getElementById("Pollen").value;
+      choices.weight = document.getElementById("Weight").value;
+      choices.height = document.getElementById("Height").value;
+      choices.age = document.getElementById("Age").value;
+      choices.gender = document.getElementById("gender").value;
+      choices.eggs = document.getElementById("Eggs").value;
+      choices.lactose = document.getElementById("Lactose").value;
+      choices.fish = document.getElementById("Fish").value;
+      choices.peanuts = document.getElementById("Peanuts").value;
+      choices.soy = document.getElementById("Soy").value;
+      choices.treenuts = document.getElementById("Tree nuts").value;
+      choices.wheat = document.getElementById("Wheat").value;
+      choices.pollen = document.getElementById("Pollen").value;
       //console.log(choices);
 
-      if(choices[0] == 0 || choices[1] == 0 || choices[2] == 0 || choices[3] == 0){
+      if(choices.weight == 0 || choices.height == 0 || choices.age == 0 || choices.gender == 0){
        alert("uga buga");
      }
      else{
       alert("raboti") 
-      Calculate_cal(choices[0], choices[1], choices[2], choices[3]);
+      Calculate_cal(choices.weight, choices.height, choices.age, choices.gender);
      }
-
 
 }
 
