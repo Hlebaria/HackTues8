@@ -32,7 +32,7 @@ function diagnose(){
         }
         if (i === 6) scoreTo6 = score
         if (i === 8 && score >= 2){
-            diagnose = diagnose + 'you may suffer from muscular dystrophy' + '\n'
+            diagnose = diagnose + 'You may suffer from muscular dystrophy' + '\n'
             healthy = 0
             console.log(diagnose, healthy, score)
             score = score - scoreTo6
