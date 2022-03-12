@@ -38,14 +38,6 @@
             </form>
             <p>What is your gender:</p>
             <form>
-                <!--input list="choice" id="Male" name="Male" value="Male">
-                <label for="Male">Male</label><br>
-                <datalist id="gender">
-                    <option value="Men">
-                    <option value="Female">
-                </datalist>
-                <input type="radio" list="coise1" id="Female" name="Female" value="Female">
-                <label for="Female">Female</label><br-->
                 <select id="gender">
                     <option value="" disabled selected hidden><i>Please choose an option<i></option>
                     <option value="Male">Male</option>
@@ -68,8 +60,10 @@
                 <label for="Tree nuts">Tree nuts</label><br>
                 <input type="checkbox" id="Wheat" name="Wheat" value="0" onclick="value = value == 0 ? 1 : 0">
                 <label for="Wheat">Wheat</label><br>
+                <input type="checkbox" id="Pollen" name="Pollen" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Pollen">Pollen</label><br>
                 <br>
-                <button type="button" onclick="Button()"><strong>Submit</strong></button>
+                <div id="buttonCenter"><button type="button" onclick="Button()"><strong>Submit</strong></button></div>
             </form>
         </div>
     </body>
