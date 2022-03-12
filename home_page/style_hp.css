@@ -41,7 +41,8 @@ a{
 .blueshadow {
     text-shadow: 1px 1px blue;
 }
-a:hover {
+a:hover{
+    border-radius: 0;
     background-color: blueviolet;
 }
 a:active{
@@ -52,7 +53,7 @@ a:active{
 }
 pre{
     color: white;
-    font-family: Comic Sans MS, Comic Sans, cursive	;
+    font-family: Comic Sans MS, Comic Sans, cursive;
     margin-top: 45px;
     margin-left: 0;
     margin-right: 0;
@@ -65,25 +66,29 @@ pre{
 }
 #rocket {
     text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 img {
     width: 62px;
     height: 62px;
     margin: 0;
+    padding-left: 20px;
 }
+
 #food {
-    width: 380px;
-    height: 180px;
+    width: 300px;
+    height: 200px;
     margin-bottom: 0;
     display: block;
+    border-radius: 50%;
 }
 #sick{
     width: 380px;
     height: 180px;
     margin-bottom: 0;
     display: block;
+    border-radius: 50%;
 }
 div {
     text-align: center;
