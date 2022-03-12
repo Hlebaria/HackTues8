@@ -88,6 +88,9 @@ h1{
 p {
     margin-top: 0;
     background-color: #A8C8E9;
+    height: 70px;
+    font-family: Serif;
+    font-size: 20px;
 }
 input[type=radio] {
     width: 20px;
