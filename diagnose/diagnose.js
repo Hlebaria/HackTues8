@@ -42,14 +42,18 @@ function diagnose(){
             score = score - scoreTo6
         }
         if (i === 14 && score >= 2){
+            openModal()
             appendValidation('You may have orthostatic hypotension')
             healthy = 0
             console.log(diagnose, healthy, score)
             score = 0
         }
     }
-    if (healthy) appendValidation("You are healthy!")
-    appendValidation(diagnose)
+    if (healthy){
+        openModal()
+        appendValidation("You are healthy!")
+    }
+    else appendValidation(diagnose)
 }
 
 function appendValidation(diagnose){
@@ -66,4 +70,5 @@ function openModal(){
 
 function closeModal(){
     modal.style.display = "none"
+    document. location. reload()
 }

@@ -40,6 +40,7 @@ a:active{
     background-color: #A8C8E9;
 }
 pre{
+    margin-top: 3%;
     background-color: #A8C8E9;
     height: 40px;
     text-shadow: 0.8px 0.8px darkblue;
