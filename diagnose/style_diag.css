@@ -52,7 +52,7 @@ pre{
 
 input, label{
     text-shadow: 0.5px 0.5px darkblue;
-    font-size: 20px;
+    font-size: 10px;
 }
 body {
     background-image: url('space.png');
@@ -74,8 +74,8 @@ button {
 div {
     text-align: center;
     background-color: rgb(63, 93, 149);
-    margin: 100px;
-    margin-top: 0;
+    margin: 200px;
+    margin-top: 40px;
     margin-bottom: 70px;
 }
 h1{
@@ -87,9 +87,10 @@ h1{
     margin-right: 80px;
     margin-top: 100px;
     margin-bottom: 5px;
-    text-shadow: 1px 1px darkblue;
+    text-shadow: 2px 2px darkblue;
+    font-size: 90px;
 }
-p {
+#result {
     margin-top: 0;
     margin-bottom: 0;
     background-color: #A8C8E9;
@@ -117,15 +118,16 @@ label {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    margin-top: 100px;
   }
   
   /* Modal Content/Box */
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 50%; /* Could be more or less, depending on screen size */
   }
   
   .close {
@@ -133,4 +135,13 @@ label {
     float: right;
     font-size: 28px;
     font-weight: bold;
+  }
+  #merg {
+    margin: 100px;
+  }
+  #startingText {
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    text-align: center;
+    font-size: 30px;
   }
