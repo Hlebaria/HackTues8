@@ -17,13 +17,15 @@ li{
     color: white;
     font-weight: bold;
 }
-a {
+a{
     display: inline-block;
     text-decoration: none;
     padding: 30px;
     color: white;
     font-family: Serif;
     font-size: 20px;
+}
+.blueshadow {
     text-shadow: 1px 1px blue;
 }
 a:hover {
@@ -56,9 +58,40 @@ pre{
 img {
     width: 62px;
     height: 62px;
+    margin: 0;
+    display: block;
+}
+#food {
+    width: 380px;
+    height: 180px;
+    margin-bottom: 0;
+}
+#sick{
+    width: 380px;
+    height: 180px;
+    margin-bottom: 0;
+}
+div {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 body {
     background-image: url('space.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+h1 {
+    font-size: 100px;
+    text-align: center;
+    color:white;
+    text-shadow: 2px 2px white;
+}
+p{
+    color: black;
+    text-shadow: 0;
+    background-color: white;
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
 }
