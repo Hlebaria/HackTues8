@@ -89,7 +89,7 @@ h1{
     margin-top: 100px;
     margin-bottom: 5px;
     text-shadow: 2px 2px darkblue;
-    font-size: 90px;
+    font-size: 50px;
 }
 #result {
     margin-top: 0;
@@ -134,13 +134,16 @@ label {
     top: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    background-color: #fefefe;
+    background-color: #A8C8E9;
     padding: 20px;
     border: 1px solid #888;
     width: 600px; /* Could be more or less, depending on screen size */
     border: 1px solid #888;
     height: 400px;
-
+    border-radius: 25px;
+    font-size: 50px;
+    text-shadow:rgb(63, 93, 149);
+    text-align: left;
   }
   
   .close {
