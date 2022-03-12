@@ -112,4 +112,5 @@ pre {
 div {
     background-image: url('space.png');
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
