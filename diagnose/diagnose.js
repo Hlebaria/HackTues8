@@ -1,5 +1,7 @@
 var list_of_answers = []
 
+var modal = document.getElementById("myModal")
+
 function getAnwers(id) {
     var answer = id.charAt(0) === "y" ? 1 : 0 
     var tempId = id.substring(1)
@@ -11,7 +13,7 @@ function getAnwers(id) {
 function diagnose(){
     var score = 0
     var scoreTo6 = 0
-    for(var i = 0; i<15; i++){
+    for(let i = 0; i<15; i++){
         if(list_of_answers[i] == undefined) {
             window.alert("Please answer all questions")
             return;
@@ -19,26 +21,28 @@ function diagnose(){
     }
     var healthy = 1
     var diagnose = ""
-    for(var i = 0; i<15; i++){
+    for(let i = 0; i<15; i++){
         console.log(i)
         score = score + list_of_answers[i]
         console.log(diagnose, healthy, score)
         if (i === 4){
             if(score >= 2){
-                diagnose = diagnose + 'You may have malignancies' + '\n'
+                openModal()
+                appendValidation('You may have malignancies')
                 healthy = 0
             }
             score = 0
         }
         if (i === 6) scoreTo6 = score
         if (i === 8 && score >= 2){
-            diagnose = diagnose + 'you may suffer from muscular dystrophy' + '\n'
+            openModal()
+            appendValidation('you may suffer from muscular dystrophy')
             healthy = 0
             console.log(diagnose, healthy, score)
             score = score - scoreTo6
         }
         if (i === 14 && score >= 2){
-            diagnose = diagnose + 'You may have orthostatic hypotension' + '\n'
+            appendValidation('You may have orthostatic hypotension')
             healthy = 0
             console.log(diagnose, healthy, score)
             score = 0
@@ -51,5 +55,15 @@ function diagnose(){
 function appendValidation(diagnose){
     var validation = document.createElement("p")
     validation.textContent = diagnose
-    document.body.appendChild(validation)
+    var modalContent = document.getElementById("modalContent")
+    modalContent.appendChild(validation)
+    
+}
+
+function openModal(){
+    modal.style.display = "block"
+}
+
+function closeModal(){
+    modal.style.display = "none"
 }
