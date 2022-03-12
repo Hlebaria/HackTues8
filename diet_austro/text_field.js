@@ -18,7 +18,7 @@ var breakfast = {
     calories: 86,
     name: "tuna fish"
   }, 
-  bacon: 417,
+  bacon:  417,
   toast: 390,
   cornflakes: 357,
   fruitsalad: 30,
