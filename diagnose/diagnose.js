@@ -53,7 +53,6 @@ function diagnose(){
         openModal()
         appendValidation("You are healthy!")
     }
-    else appendValidation(diagnose)
 }
 
 function appendValidation(diagnose){
