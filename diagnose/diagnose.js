@@ -21,11 +21,11 @@ function diagnose(){
     }
     var healthy = 1
     var diagnose = ""
-    for(let i = 0; i<4; i++){
+    for(let i = 0; i<15; i++){
         console.log(i)
         score = score + list_of_answers[i]
         console.log(diagnose, healthy, score)
-        if (i === 4){
+        if (i === 15){
             if(score >= 2){
                 openModal()
                 appendValidation('You may have malignancies')
