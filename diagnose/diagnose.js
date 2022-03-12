@@ -13,7 +13,7 @@ function getAnwers(id) {
 function diagnose(){
     var score = 0
     var scoreTo6 = 0
-    for(let i = 0; i<15; i++){
+    for(let i = 0; i<4; i++){
         if(list_of_answers[i] == undefined) {
             window.alert("Please answer all questions")
             return;
@@ -21,7 +21,7 @@ function diagnose(){
     }
     var healthy = 1
     var diagnose = ""
-    for(let i = 0; i<15; i++){
+    for(let i = 0; i<4; i++){
         console.log(i)
         score = score + list_of_answers[i]
         console.log(diagnose, healthy, score)
@@ -42,14 +42,18 @@ function diagnose(){
             score = score - scoreTo6
         }
         if (i === 14 && score >= 2){
+            openModal()
             appendValidation('You may have orthostatic hypotension')
             healthy = 0
             console.log(diagnose, healthy, score)
             score = 0
         }
     }
-    if (healthy) appendValidation("You are healthy!")
-    appendValidation(diagnose)
+    if (healthy){
+        openModal()
+        appendValidation("You are healthy!")
+    }
+    else appendValidation(diagnose)
 }
 
 function appendValidation(diagnose){
@@ -66,4 +70,5 @@ function openModal(){
 
 function closeModal(){
     modal.style.display = "none"
+    document. location. reload()
 }
