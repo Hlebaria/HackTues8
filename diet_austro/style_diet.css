@@ -9,6 +9,10 @@ ul {
     padding: 0;
     font-size: 0;
     opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: block;
 }
 li{
     display: inline-block;
@@ -37,7 +41,9 @@ a:active{
 }
 
 .intro{
-    margin: 5%;
+    margin-top:100px;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 25px;
     background-color: #2B042A;
 }
@@ -46,16 +52,13 @@ form {
     margin-bottom: 0;
 }
 h1{
-    margin: 5%;
     text-shadow: 3px 3px 6px black;
     font-family: Geneva, Verdana, sans-serif;
     text-align: center;
     color: white;
-    font-size: 50px;
-}
-
-.intru{
-    margin: 3%;
+    font-size: 60px;
+    text-align:center;
+    vertical-align: middle;
 }
 
 pre{
