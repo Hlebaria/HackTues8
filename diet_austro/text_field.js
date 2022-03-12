@@ -1,4 +1,61 @@
-let choices = [12];
+var choices = {
+  weight: null,
+  height: null,
+  age: null,
+  gender: null,
+  eggs: null,
+  lactose: null,
+  fish: null, 
+  peanuts: null,
+  soy: null,
+  treenuts: null,
+  wheat: null,
+  pollen: null
+}
+
+var breakfast = {
+  tunafish: {
+    calories: 86,
+    name: "tuna fish"
+  }, 
+  bacon: 417,
+  toast: 390,
+  cornflakes: 357,
+  fruitsalad: 30,
+  sausage: 287,
+  scrambledeggs: 212,
+  peaches: 39,
+  apricot: 48
+}
+
+var lunch = {
+  chickensoup: 36,
+  tomatosoup: 54,
+  potatosoup: 91,
+  peasoup: 88,
+  bread: 267,
+  tortilla: 218,
+  peanutbutter: 598,
+  salame: 423
+ }
+
+var dinner = {
+  beefjerky: 149,
+  cannedbeef: 246,
+  beefsteak: 183,
+  fish: 120,
+  meatballs: 188,
+  chickenwithrice: 24,
+  spaghettibolognese: 144
+}
+
+var desert = {
+  brownie: 466,
+  jam: 278,
+  cafe: 90,
+  grapejuice: 63,
+  orangejuice: 45
+}
 
 function Button(){
 
@@ -14,23 +71,30 @@ function Button(){
       choices[9] = document.getElementById("Tree nuts").value;
       choices[10] = document.getElementById("Wheat").value;
       choices[11] = document.getElementById("Pollen").value;
-      console.log(choices);
+      //console.log(choices);
 
       if(choices[0] == 0 || choices[1] == 0 || choices[2] == 0 || choices[3] == 0){
        alert("uga buga");
      }
      else{
       alert("raboti") 
-      console.log(Calculate_cal(choices[0], choices[1], choices[2], choices[3]));
+      Calculate_cal(choices[0], choices[1], choices[2], choices[3]);
      }
+
+
 }
 
 function Calculate_cal( W, H, A, G){
+  var BMR;
   if(G == 'Male'){    
-  var BMR = 10*W + 6.5*H - 5*A + 5;
-  console.log(BMR);
+   BMR = 10*W + 6.5*H - 5*A + 5;
   }else{
-    var BMR1 = 10*W + 6.5*H - 5*A - 161;
-    console.log(BMR1);
+    BMR = 10*W + 6.5*H - 5*A - 161;
   }
+  console.log(BMR);
+}
+
+function Fiter( E, L, F, Pea, S, T, W, P){
+  var bbb = E + L + F + Pea + S + T + W + P
+  console.log(bbb);
 }
