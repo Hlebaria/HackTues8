@@ -54,7 +54,6 @@ pre{
     height: 40px;
     text-shadow: 0.8px 0.8px darkblue;
     font-size: 20px;
-    border-style: dotted;
     border-color: darkblue;
     font-family: Serif;
     padding-top: 14px;
@@ -70,8 +69,8 @@ body {
     background-size: cover;
 }
 button {
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 60px;
     font-size: 20px;
     font-family: Serif;
     background-color: blue;
@@ -80,6 +79,7 @@ button {
     border-style:double;
     border-color: #A8C8E9;
     margin-bottom: 30px;
+    border-radius: 25px;
 }
 div {
     text-align: center;
@@ -111,10 +111,12 @@ h1{
 input[type=radio] {
     width: 20px;
     height: 20px;
+    border-radius: 25px;
 }
 label {
     color: black;
     font-size: 25px;
+    border-radius: 25px;
 }
 
 .modal {
@@ -132,6 +134,7 @@ label {
     /*margin-top: 100px;*/
     align-items: center;
     margin: 0;
+    border-radius: 25px;
   }
   
   /* Modal Content/Box */
@@ -153,6 +156,7 @@ label {
     font-size: 50px;
     text-shadow:rgb(63, 93, 149);
     text-align: left;
+    border-radius: 25px;
   }
   
   .close {
