@@ -1,15 +1,6 @@
-var gender;
-function calculate_cal() {
-    let inputWeg = document.getElementById("Weight").value;
-    alert(inputWeg);
-  }
-let choices = [];
-
+let choices = [12];
 
 function Button(){
-  var ok = 0;
-  let choices = [11];
-  var problem = false
 
       choices[0] = document.getElementById("Weight").value;
       choices[1] = document.getElementById("Height").value;
@@ -22,10 +13,24 @@ function Button(){
       choices[8] = document.getElementById("Soy").value;
       choices[9] = document.getElementById("Tree nuts").value;
       choices[10] = document.getElementById("Wheat").value;
+      choices[11] = document.getElementById("Pollen").value;
       console.log(choices);
 
       if(choices[0] == 0 || choices[1] == 0 || choices[2] == 0 || choices[3] == 0){
        alert("uga buga");
      }
-     else alert("raboti")
+     else{
+      alert("raboti") 
+      console.log(Calculate_cal(choices[0], choices[1], choices[2], choices[3]));
+     }
+}
+
+function Calculate_cal( W, H, A, G){
+  if(G == 'Male'){    
+  var BMR = 10*W + 6.5*H - 5*A + 5;
+  console.log(BMR);
+  }else{
+    var BMR1 = 10*W + 6.5*H - 5*A - 161;
+    console.log(BMR1);
   }
+}
