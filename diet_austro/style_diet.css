@@ -76,6 +76,7 @@ h1{
     font-size: 30px;
     margin-left: 200px;
     margin-right: 200px;
+    
   }
 
 pre{
@@ -98,6 +99,8 @@ body{
     border-radius: 25px;
     background-color:  #6321BF;
     background-color: rgb(63, 93, 149);
+    font-weight: bold;
+    color: white;
 }
 
 .kilog{
