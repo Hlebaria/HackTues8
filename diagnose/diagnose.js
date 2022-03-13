@@ -13,19 +13,18 @@ function getAnwers(id) {
 function diagnose(){
     var score = 0
     var scoreTo6 = 0
-    for(let i = 0; i<4; i++){
+    for(let i = 0; i<15; i++){
         if(list_of_answers[i] == undefined) {
             window.alert("Please answer all questions")
             return;
         }
     }
     var healthy = 1
-    var diagnose = ""
     for(let i = 0; i<15; i++){
         console.log(i)
         score = score + list_of_answers[i]
-        console.log(diagnose, healthy, score)
-        if (i === 15){
+        console.log(healthy, score)
+        if (i === 4){
             if(score >= 2){
                 openModal()
                 appendValidation('You may have malignancies. The term "malignancy" refers to the presence of cancerous cells that have the ability to spread to other sites in the body (metastasize) or to invade nearby (locally) and destroy tissues. It could be caused from the radiation in the cosmos. You should go to an oncologist.')
@@ -38,14 +37,14 @@ function diagnose(){
             openModal()
             appendValidation('You may suffer from muscular dystrophy. Muscular dystrophy is a group of diseases that cause progressive weakness and loss of muscle mass. In muscular dystrophy, abnormal genes (mutations) interfere with the production of proteins needed to form healthy muscle. ')
             healthy = 0
-            console.log(diagnose, healthy, score)
+            console.log(healthy, score)
             score = score - scoreTo6
         }
         if (i === 14 && score >= 2){
             openModal()
             appendValidation('You may have orthostatic hypotension. Orthostatic hypotension is a form of low blood pressure that happens when you stand up from sitting or lying down. ')
             healthy = 0
-            console.log(diagnose, healthy, score)
+            console.log(healthy, score)
             score = 0
         }
     }
