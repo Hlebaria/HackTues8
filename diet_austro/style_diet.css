@@ -151,3 +151,10 @@ div{
     font-size: 20px;
     
 }
+#elementid{
+    background-color: rgb(63, 93, 149);
+    font-size: 30px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
