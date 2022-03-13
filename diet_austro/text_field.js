@@ -223,13 +223,9 @@ function button(){
       choices.treenuts = document.getElementById("Tree nuts").value;
       choices.wheat = document.getElementById("Wheat").value;
       choices.pollen = document.getElementById("Pollen").value;
-      //console.log(choices);
-      console.log(choices.gender);
       if(choices.weight == 0 || choices.height == 0 || choices.age == 0 || choices.gender == 0){
-       alert("uga buga");
      }
      else{
-      alert("raboti") 
       var BMR = calculate_cal(choices);
       var allergieList = allergie(choices);
       writingFunc(getDailyDiet(allergieList, BMR));
@@ -265,7 +261,6 @@ function allergie(data){
 }
 
 function getDailyDiet(allergies, BMR){
-  console.log(allergies)
   var filteredBreakfast = breakfast.filter(x => !allergies.includes(x.all));
   var indexOfBreakfast = Math.floor(Math.random() * (filteredBreakfast.length - 1));
   var filteredLunch = breakfast.filter(x => !allergies.includes(x.all));
@@ -294,12 +289,13 @@ function getDailyDiet(allergies, BMR){
   breakfastGrams = breakfastGrams - (breakfastGrams%25);
   lunchGrams = lunchGrams - (lunchGrams%25);
   dinnerGrams = dinnerGrams - (dinnerGrams%25);
-  return `Breakfast: ${breakfastGrams} of ${breakfast.name}. Lunch: ${lunchGrams} of ${lunch.name}. Dinner: ${dinnerGrams} of ${dinner.name}.`
+  return `Breakfast: ${breakfastGrams} of ${breakfastFood.name}. Lunch: ${lunchGrams} of ${lunchFood.name}. Dinner: ${dinnerGrams} of ${dinnerFood.name}.`
 }
 
-function writingFunc(text){
+
+function writingFunc(diet){
   var validation = document.createElement("p")
-  validation.textContent = text
+  validation.textContent = diet
   var makingtext = document.getElementById("elementid")
   makingtext.appendChild(validation)
 }
