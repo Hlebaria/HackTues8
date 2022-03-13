@@ -51,7 +51,7 @@ a:active{
 #hp{
     background-color: #A8C8E9;
 }
-pre{
+#homepageIntro{
     color: white;
     font-family: Comic Sans MS, Comic Sans, cursive;
     margin-top: 45px;
@@ -62,6 +62,7 @@ pre{
     font-family: Serif;
     text-shadow: 1px 1px blue;
     text-align: center;
+
 }
 #rocket {
     text-align: center;
