@@ -95,6 +95,7 @@ body{
 
 .questions{
     padding-top: 3%;
+    border-radius: 25px;
     background-color:  #6321BF;
     background-color: rgb(63, 93, 149);
 }
