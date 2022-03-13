@@ -1,0 +1,131 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    background-color: rgb(44,23,83);
+    opacity: 0.8;
+    margin-top: 0;
+    padding: 0;
+    font-size: 0;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    display: inline-block;
+}
+#logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px;
+    color: white;
+    font-family: Serif;
+    font-size: 20px;
+    text-shadow: 1px 1px blue;
+}
+a:hover {
+    background-color: blueviolet;
+}
+a:active{
+    background-color: aqua;
+}
+#abu{
+    background-color: #A8C8E9;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    background-color: #2B042A;
+    padding: 30px;
+    border-radius: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.headAU{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+    background-color: #2B042A;
+    border-radius: 60px;
+}
+
+body{
+    background-image: url('space.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.AUtext{
+    background-image: url('space.png');
+    background-repeat: no-repeat;
+    margin-left: 0;
+    margin-right: 0;
+}
+#img {
+    text-align: center;
+}
+img {
+    width: 600px;
+    height: 400px;
+}
+pre {
+    color: white;
+    font-family: Geneva, Verdana, sans-serif;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;  
+    background-color: rgb(63, 93, 149);
+    font-size: 20px;
+    text-shadow: 1px 1px darkblue;
+    border-radius: 6px;
+}
+
+.small{
+    padding-right: 3%;
+    font-size: 20px;
+    color: white;
+    text-align: end;
+    background-image: url('space.png');
+    background-repeat: no-repeat;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#elsys{
+    padding: 0;
+    font-size: 20;
+    color: #dd99ff;
+    background-color: none;
+}
+
+#contacts{
+    margin-top:0;
+    color: grey;
+    font-size: 15;
+    text-align: center;
+}
+div {
+    background-image: url('space.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}

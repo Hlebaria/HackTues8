@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style_diet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Health in space</title>
+    </head>
+    <body>
+        <ul>
+            <li><a id="hp"href="../home_page/home_page.html"><img id = "logo" src="hacktues-logo.png"></a></li>
+            <li><a id="da"href="../diet_austro/diet_austro.html">Astronaut Diet</a></li>
+            <li><a id="dga"href="../diagnose/diagnose.html">Astronaut Diagnose</a></li>
+            <li><a id="abu"href="../about/about.html">About Us</a></li>
+        </ul>
+       
+        <div class = "intro">
+            <h1>
+                Welcome to our special SPACE DIET generator!
+            </h1>
+        </div>
+        <div >
+            <p id="startingText">
+                    To use our product, simply input the desired information below
+                 and the system will automatically generate a suitable one week diet plan just for you!
+            </p>
+        </div>
+        <div id ="questionsWrapper" class = "questions">
+            <form name = "textbox">
+                <label for="kilograms">Tell me your weight (kg):</label>
+                <input type="number" name="kilograms" placeholder="Type your weight here..." maxlength="3" id="Weight" value = ""><br>
+                <label for="height">Tell me your height (cm):</label>
+                <input type="number" name="height" placeholder="Type your height here..." maxlength="3" id="Height"><br>
+                <label for="age">Tell me your age:</label>
+                <input type="number" name="age" placeholder="Type your age here..." maxlength="3" id="Age"><br>
+            </form>
+            <p>What is your gender:</p>
+            <form>
+                <select id="gender">
+                    <option value="" disabled selected hidden><i>Please choose an option<i></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </form>
+            <p>Mark your allergies:</p>
+            <form>
+                <input type="checkbox" id="Eggs" name="Eggs" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Eggs">Eggs</label><br>
+                <input type="checkbox" id="Lactose" name="Lactose" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Lactose">Lactose</label><br>
+                <input type="checkbox" id="Fish" name="Fish" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Fish">Fish</label><br>
+                <input type="checkbox" id="Peanuts" name="Peanuts" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Peanuts">Peanuts</label><br>
+                <input type="checkbox" id="Soy" name="Soy" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Soy">Soy</label><br>
+                <input type="checkbox" id="Tree nuts" name="Tree nuts" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Tree nuts">Tree nuts</label><br>
+                <input type="checkbox" id="Wheat" name="Wheat" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Wheat">Wheat</label><br>
+                <input type="checkbox" id="Pollen" name="Pollen" value="0" onclick="value = value == 0 ? 1 : 0">
+                <label for="Pollen">Pollen</label><br>
+                <br>
+                <div id="buttonCenter"><button type="button" onclick="button()"><strong>Submit</strong></button></div>
+                <!-- <div class = "modalWrapper">
+                </div> -->
+            </form>   
+            <div id = "modalContent" class="modal-content">
+                <button class = "close" onclick="closeModal()">X</button>
+            </div>
+        </div>
+        <!--div><pre><script>document.write(getDailyDiet(allergies, calculate_cal(choices)))</script></pre></div-->
+        <div id="elementid"></div>
+        <script src="text_field.js"></script>
+    </body>
+</html>
