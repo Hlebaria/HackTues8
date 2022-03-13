@@ -70,6 +70,14 @@ h1{
     vertical-align: middle;
 }
 
+#startingText {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
 pre{
     color: white;
     text-shadow: 1px 1px black;
@@ -109,14 +117,16 @@ div {
     margin-bottom: 0;
 }
 button {
+    width: 100px;
+    height: 60px;
     font-size: 20px;
     font-family: Serif;
-    text-shadow: 0.8px 0.8px darkblue;
-    border-style: double;
-    border-color:blue;
-    width: 90px;
-    height: 50px;
-    text-align: center;
+    background-color: blue;
+    color: white;
+    text-shadow: 1px 1px black;
+    border-style:double;
+    border-color: #A8C8E9;
+    margin-bottom: 30px;
     border-radius: 25px;
 }
 #buttonCenter{
@@ -140,4 +150,11 @@ div{
 {
     font-size: 20px;
     
+}
+#elementid{
+    background-color: rgb(63, 93, 149);
+    font-size: 30px;
+    text-align: center;
+    margin-left: 200px;
+    margin-right: 200px;
 }
