@@ -1,3 +1,5 @@
+var modal = document.getElementById("modalContent")
+
 var choices = {
   weight: null,
   height: null,
@@ -307,12 +309,15 @@ function getDailyDiet(allergies, BMR, day){
   if(day == 6)var today = 'Saturday';
   if(day == 7)var today = 'Sunday';
 
-  
+
   if(desertOk == 1){
-   return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: ${desertFood.calories} g of ${desertFood.name}.`
+    console.log("thing")
+    openModal()
+    return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: ${desertFood.calories} g of ${desertFood.name}.`
   }
   else {
-    return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: - .`
+    openModal()
+    return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: - none.`
   }
 }
 
@@ -320,7 +325,16 @@ function getDailyDiet(allergies, BMR, day){
 function writingFunc(diet){
   var validation = document.createElement("p")
   validation.textContent = diet
-  var makingtext = document.getElementById("elementid")
-  makingtext.appendChild(validation)
+  var modalContent = document.getElementById("modalContent")
+  modalContent.appendChild(validation)
+}
+
+function openModal(){
+    modal.style.display = "block"
+}
+
+function closeModal(){
+    modal.style.display = "none"
+    document. location. reload()
 }
 //write()  createElement()  textContent  appendChild()

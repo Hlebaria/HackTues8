@@ -59,7 +59,6 @@ function appendValidation(diagnose){
     validation.textContent = diagnose
     var modalContent = document.getElementById("modalContent")
     modalContent.appendChild(validation)
-    
 }
 
 function openModal(){
