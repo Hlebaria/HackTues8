@@ -13,163 +13,203 @@ var choices = {
   pollen: null
 }
 
-var breakfast = {
-  tunafish: {
+const allergies = {
+  eggs: "eggs",
+  lactose: "lactose",
+  fish: "fish",
+  peanuts: "peanuts",
+  soy: "soy",
+  treeNuts: "treeNuts",
+  wheat: "wheat",
+  pollen: "pollen"
+}
+
+var breakfast = [
+  
+  {
     calories: 86,
     name: "tuna fish",
-    all: 3
+    all: allergies.fish
   }, 
-  bacon: {
+  
+  {
     clories: 417,
     name: "bacon",
-    all: 0
+    all: null
   },
-  toast: {
+  
+  {
     calories: 390,
     name: "toast",
-    all: 7
+    all: allergies.wheat
   },
-  cornflakes: {
+  
+  {
     calories: 357,
     name: "cornflakes",
-    all: 0
+    all: null
   },
-  fruitsalad: {
+  
+  {
     calories: 30,
     name: "fruit salad",
-    all: 8
+    all: allergies.pollen
   },
-  sausage: {
+  
+  {
     calories: 287,
     name: "sausage",
-    all: 1
+    all: allergies.eggs
   },
-  scrambledeggs: {
+  
+  {
     calories: 212,
     name: "scrambled eggs",
-    all: 1
+    all: allergies.eggs
   },
-  peaches: {
+  
+  {
     calories: 39,
     name: "peaches",
-    all: 8
+    all: allergies.pollen
   },
-  apricot: {
+  
+  {
     calories: 48,
     name: "apricot",
-    all: 8
+    all: allergies.pollen
   }
-}
+]
 
-var lunch = {
-  chickensoup: {
+var lunch = [
+  
+  {
     calories: 36,
     name: "chicken soup",
-    all: 0
+    all: null
   },
-  tomatosoup: {
+  
+  {
     calories: 54,
     name: "tomato soup",
-    all: 0
+    all: null
   },
-  potatosoup: {
+  
+  {
     calories: 91,
     name: "potato soup",
-    all: 0
+    all: null
   },
-  peasoup: {
+  
+  {
     calories: 88,
     name: "pea soup",
-    all: 0
+    all: null
   },
-  bread: {
+  
+  {
     calories: 267,
     name: "bread",
-    all: 7
+    all: allergies.wheat
   },
-  tortilla: {
+  
+  {
     calories: 218,
     name: "tortilla",
-    all: 7
+    all: allergies.wheat
   },
-  peanutbutter: {
+  
+  {
     calories: 598,
     name: "peanutbutter",
-    all: 4
+    all: allergies.peanuts
   },
-  salame: {
+  
+  {
     calories: 423,
     name: "salame",
-    all: 0
+    all: null
   }
- }
+]
 
-var dinner = {
-  beefjerky: {
+var dinner = [
+  
+  {
     calories: 149,
     name: "beef jerky",
-    all: 0
+    all: null
   },
-  cannedbeef: {
+  
+  {
     calories: 246,
     name: "canned beef",
-    all: 0
+    all: null
   },
-  beefsteak: {
+  
+  {
     calories: 183,
     name: "beef steak",
-    all: 0
+    all: null
   },
-  fish: {
+  
+  {
     calories: 120,
     name: "fish",
-    all: 3
+    all: allergies.fish
   },
-  meatballs: {
+  
+  {
     calories: 188,
     name: "meatballs",
-    all: 1
+    all: allergies.eggs
   },
-  chickenwithrice: {
+  
+  {
     calories: 24,
     name: "chicken with rice",
-    all: 0
+    all: null
   },
-  spaghettibolognese: {
+  
+  {
     calories: 144,
     name: "spaghetti bolognese",
-    all: 1
+    all: allergies.wheat
   }
-}
+]
 
-var desert = {
-  brownie: {
+var desert = [ 
+  {
     calories: 466,
     name: "brownie",
-    all: 2
+    all: allergies.lactose
   },
-  jam: {
+  
+  {
     calories: 278,
     name: "jam",
-    all: 8
+    all: allergies.pollen
   },
-  cafe: {
+  
+  {
     calories: 90,
-    name: "coffee"
+    name: "coffee",
+    all: null
   },
-  grapejuice: {
+  
+  {
     calories: 63,
     name: "grape juice",
-    all: 8
+    all: allergies.pollen
   },
-  orangejuice: {
+  
+  {
     calories: 45,
     name: "orange juice",
-    all: 8
+    all: allergies.pollen
   }
-}
+]
 
-function Button(){
+function button(){
 
       choices.weight = document.getElementById("Weight").value;
       choices.height = document.getElementById("Height").value;
@@ -184,28 +224,79 @@ function Button(){
       choices.wheat = document.getElementById("Wheat").value;
       choices.pollen = document.getElementById("Pollen").value;
       //console.log(choices);
-
+      console.log(choices.gender);
       if(choices.weight == 0 || choices.height == 0 || choices.age == 0 || choices.gender == 0){
        alert("uga buga");
      }
      else{
       alert("raboti") 
-      Calculate_cal(choices.weight, choices.height, choices.age, choices.gender);
+      var BMR = calculate_cal(choices);
+      var allergieList = allergie(choices);
+      getDailyDiet (allergieList, BMR);
      }
 
 }
 
-function Calculate_cal( W, H, A, G){
+function calculate_cal(data){
   var BMR;
-  if(G == 'Male'){    
-   BMR = 10*W + 6.5*H - 5*A + 5;
+  if(data.gender == 'Male'){    
+   BMR = 10*data.weight + 6.5*data.height - 5*data.age + 5;
   }else{
-    BMR = 10*W + 6.5*H - 5*A - 161;
+    BMR = 10*data.weight + 6.5*data.height - 5*data.age - 161;
   }
+
   console.log(BMR);
+  return BMR
 }
 
-function Fiter( E, L, F, Pea, S, T, W, P){
-  var bbb = E + L + F + Pea + S + T + W + P
-  console.log(bbb);
+function allergie(data){
+  var alergie = [];
+  if(data.eggs == 1)alergie.push(allergies.eggs);
+  if(data.lactose == 1)alergie.push(allergies.lactose);
+  if(data.fish == 1)alergie.push(allergies.fish);
+  if(data.peanuts == 1)alergie.push(allergies.peanuts);
+  if(data.soy == 1)alergie.push(allergies.soy);
+  if(data.treeNuts == 1)alergie.push(allergies.treeNuts);
+  if(data.wheat == 1)alergie.push(allergies.wheat);
+  if(data.pollen == 1)alergie.push(allergies.pollen);
+  console.log(alergie);
+
+  return alergie
 }
+
+function getDailyDiet(allergies, BMR){
+  console.log(allergies)
+  var filteredBreakfast = breakfast.filter(x => !allergies.includes(x.all));
+  var indexOfBreakfast = Math.random() * (filteredBreakfast.lenght - 1);
+  var filteredLunch = breakfast.filter(x => !allergies.includes(x.all));
+  var indexOfLunch = Math.random() * (filteredLunch.lenght - 1);
+  var filteredDinner = dinner.filter(x => !allergies.includes(x.all));
+  var indexOfDinner = Math.random() * (filteredDinner.lenght - 1);
+  var filteredDesert = desert.filter(x => !allergies.includes(x.all));
+  var indexOfDesert = Math.random() * (filteredDesert.lenght - 1);
+
+  var breakfastFood = breakfast[indexOfBreakfast]
+  var lunchFood = lunch[indexOfLunch]
+  var dinnerFood = dinner[indexOfDinner]
+  var desertFood = desert[indexOfDesert]
+
+  //proportions of kcal in daily servings 2/3/2 (breakfast/lunch/dinner)
+  var breakfastCal = (BMR/7)*2;
+  var lunchCal = (BMR/7)*3
+  var dinnerCal = (BMR/7)*2;
+  console.log(indexOfBreakfast,filteredBreakfast)
+  //get the grams from each serving
+  var breakfastGrams = (100*breakfastCal)/breakfastFood.calories;
+  var lunchGrams = (100*lunchCal)/lunchFood.calories;
+  var dinnerGrams = (100*dinnerCal)/dinnerFood.calories;
+
+  //make the numbers easier for the user to understand
+  breakfastGrams = breakfastGrams - (breakfastGrams%25);
+  lunchGrams = lunchGrams - (lunchGrams%25);
+  dinnerGrams = dinnerGrams - (dinnerGrams%25);
+
+  console.log(breakfastGrams);
+  console.log(lunchGrams);
+  console.log(dinnerGrams);
+}
+//write()  createElement()  textContent  appendChild()
