@@ -55,14 +55,13 @@ a:active{
     color: white;
     font-family: Comic Sans MS, Comic Sans, cursive;
     margin-top: 45px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: 30px;
     background-color: rgb(63, 93, 149);
     font-family: Serif;
     text-shadow: 1px 1px blue;
     text-align: center;
-
 }
 #rocket {
     text-align: center;
