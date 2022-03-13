@@ -232,7 +232,7 @@ function button(){
       alert("raboti") 
       var BMR = calculate_cal(choices);
       var allergieList = allergie(choices);
-      getDailyDiet (allergieList, BMR);
+      writingFunc(getDailyDiet(allergieList, BMR));
      }
 
 }
@@ -267,13 +267,13 @@ function allergie(data){
 function getDailyDiet(allergies, BMR){
   console.log(allergies)
   var filteredBreakfast = breakfast.filter(x => !allergies.includes(x.all));
-  var indexOfBreakfast = Math.random() * (filteredBreakfast.lenght - 1);
+  var indexOfBreakfast = Math.floor(Math.random() * (filteredBreakfast.length - 1));
   var filteredLunch = breakfast.filter(x => !allergies.includes(x.all));
-  var indexOfLunch = Math.random() * (filteredLunch.lenght - 1);
+  var indexOfLunch = Math.floor(Math.random() * (filteredLunch.length - 1));
   var filteredDinner = dinner.filter(x => !allergies.includes(x.all));
-  var indexOfDinner = Math.random() * (filteredDinner.lenght - 1);
+  var indexOfDinner = Math.floor(Math.random() * (filteredDinner.length - 1));
   var filteredDesert = desert.filter(x => !allergies.includes(x.all));
-  var indexOfDesert = Math.random() * (filteredDesert.lenght - 1);
+  var indexOfDesert = Math.floor(Math.random() * (filteredDesert.length - 1));
 
   var breakfastFood = breakfast[indexOfBreakfast]
   var lunchFood = lunch[indexOfLunch]
@@ -284,7 +284,7 @@ function getDailyDiet(allergies, BMR){
   var breakfastCal = (BMR/7)*2;
   var lunchCal = (BMR/7)*3
   var dinnerCal = (BMR/7)*2;
-  console.log(indexOfBreakfast,filteredBreakfast)
+  console.log(indexOfBreakfast, filteredBreakfast)
   //get the grams from each serving
   var breakfastGrams = (100*breakfastCal)/breakfastFood.calories;
   var lunchGrams = (100*lunchCal)/lunchFood.calories;
@@ -294,9 +294,13 @@ function getDailyDiet(allergies, BMR){
   breakfastGrams = breakfastGrams - (breakfastGrams%25);
   lunchGrams = lunchGrams - (lunchGrams%25);
   dinnerGrams = dinnerGrams - (dinnerGrams%25);
+  return `Breakfast: ${breakfastGrams} of ${breakfast.name}. Lunch: ${lunchGrams} of ${lunch.name}. Dinner: ${dinnerGrams} of ${dinner.name}.`
+}
 
-  console.log(breakfastGrams);
-  console.log(lunchGrams);
-  console.log(dinnerGrams);
+function writingFunc(text){
+  var validation = document.createElement("p")
+  validation.textContent = text
+  var makingtext = document.getElementById("elementid")
+  makingtext.appendChild(validation)
 }
 //write()  createElement()  textContent  appendChild()
