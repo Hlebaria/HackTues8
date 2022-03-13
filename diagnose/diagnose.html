@@ -13,101 +13,122 @@
             <li><a id="dga"href="../diagnose/diagnose.html">Astronaut Diagnose</a></li>
             <li><a id="abu"href="../about/about.html">About Us</a></li>
         </ul>
-        <h1>Diagnosis</h1>
+        <div class = "intro">
+            <h1>Diagnostic</h1>
+        </div>
         <p id="startingText">This is our Diagnostic Generator. It will make a correct diagnosis and you will know if you are absolutely healthy or, if you are sick, you will be given a diagnosis</p>
         <script type="text/javascript" src="diagnose.js"></script>
-        <div>
-        <pre> Do you have a persistent cough and / or wheezing?</pre>
-        <input id = "y1" type="radio" name = "question1" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n1" type="radio" name = "question1" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have difficulty swallowing?</pre>
-        <input id = "y2" type="radio" name = "question2" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n2" type="radio" name = "question2" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you often change your urination habits?</pre>
-        <input id = "y3" type="radio" name = "question3" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n3" type="radio" name = "question3" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have skin problems or discoloration of the moles?</pre>
-        <input id = "y4" type="radio" name = "question4" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n4" type="radio" name = "question4" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have breathing problems or difficulty breathing?</pre>
-        <input id = "y5" type="radio" name = "question5" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n5" type="radio" name = "question5" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have weakness in your lower limbs?</pre>
-        <input id = "y6" type="radio" name = "question6" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n6" type="radio" name = "question6" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have tingling in your eyelids?</pre>
-        <input id = "y7" type="radio" name = "question7" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n7" type="radio" name = "question7" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have problems with movement (problems with the central nervous system)?</pre>
-        <input id = "y8" type="radio" name = "question8" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n8" type="radio" name = "question8" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have mental health problems (central nervous system problems)?</pre>
-        <input id = "y9" type="radio" name = "question9" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n9" type="radio" name = "question9" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have a change in posture?</pre>
-        <input id = "y10" type="radio" name = "question10" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n10" type="radio" name = "question10" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have an increase in heart rate?</pre>
-        <input id = "y11" type="radio" name = "question11" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n11" type="radio" name = "question11" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have seizures or blackening when standing up?</pre>
-        <input id = "y12" type="radio" name = "question12" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n12" type="radio" name = "question12" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have impaired blood circulation?</pre>
-        <input id = "y13" type="radio" name = "question13" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n13" type="radio" name = "question13" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre> Do you have diarrhea or vomiting?</pre>
-        <input id = "y14" type="radio" name = "question14" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n14" type="radio" name = "question14" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
-        <p id="line">___________________________________________________________________________________________________________</p>
-        <pre>  Do you have heart disease?</pre>
-        <input id = "y15" type="radio" name = "question15" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
-        <label for="yes"> YES</label><br>
-        <input id = "n15" type="radio" name = "question15" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
-        <label for="no"> NO</label><br>
+        <div class = "wrapper">
+            <div class = "questionWrapper">
+                <pre> Do you have a persistent cough and / or wheezing?</pre>
+                <input id = "y1" type="radio" name = "question1" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n1" type="radio" name = "question1" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have difficulty swallowing?</pre>
+                <input id = "y2" type="radio" name = "question2" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n2" type="radio" name = "question2" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you often change your urination habits?</pre>
+                <input id = "y3" type="radio" name = "question3" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n3" type="radio" name = "question3" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have skin problems or discoloration of the moles?</pre>
+                <input id = "y4" type="radio" name = "question4" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n4" type="radio" name = "question4" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have breathing problems or difficulty breathing?</pre>
+                <input id = "y5" type="radio" name = "question5" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n5" type="radio" name = "question5" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have weakness in your lower limbs?</pre>
+                <input id = "y6" type="radio" name = "question6" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n6" type="radio" name = "question6" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have tingling in your eyelids?</pre>
+                <input id = "y7" type="radio" name = "question7" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n7" type="radio" name = "question7" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have problems with movement (problems with the central nervous system)?</pre>
+                <input id = "y8" type="radio" name = "question8" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n8" type="radio" name = "question8" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have mental health problems (central nervous system problems)?</pre>
+                <input id = "y9" type="radio" name = "question9" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n9" type="radio" name = "question9" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have a change in posture?</pre>
+                <input id = "y10" type="radio" name = "question10" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n10" type="radio" name = "question10" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have an increase in heart rate?</pre>
+                <input id = "y11" type="radio" name = "question11" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n11" type="radio" name = "question11" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have seizures or blackening when standing up?</pre>
+                <input id = "y12" type="radio" name = "question12" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n12" type="radio" name = "question12" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have impaired blood circulation?</pre>
+                <input id = "y13" type="radio" name = "question13" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n13" type="radio" name = "question13" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre> Do you have diarrhea or vomiting?</pre>
+                <input id = "y14" type="radio" name = "question14" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n14" type="radio" name = "question14" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
+            <div class = "questionWrapper">
+                <pre>  Do you have heart disease?</pre>
+                <input id = "y15" type="radio" name = "question15" answer_yes="yes" answer_no="no" onclick="getAnwers(this.id)">
+                <label for="yes"> YES</label><br>
+                <input id = "n15" type="radio" name = "question15" answer_yes="yes" answer_no="no"  onclick ="getAnwers(this.id)">
+                <label for="no"> NO</label><br>
+            </div>
         <br>
         <button onclick="diagnose()">Get Result</button>
+        </div>
+        <!-- <div class = "modalWrapper">
+        </div> -->
             <div id = "modalContent" class="modal-content">
                 <button class = "close" onclick="closeModal()">X</button>
             </div>
