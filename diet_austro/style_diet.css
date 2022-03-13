@@ -54,6 +54,7 @@ a:active{
     margin-right: 10%;
     border-radius: 25px;
     background-color: #2B042A;
+    text-align: center;
 }
 form {
     text-shadow: 1px 1px 4px black;
@@ -115,6 +116,7 @@ button {
     width: 90px;
     height: 50px;
     text-align: center;
+    border-radius: 25px;
 }
 #buttonCenter{
     text-align: center;

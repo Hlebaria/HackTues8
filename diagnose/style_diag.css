@@ -54,7 +54,6 @@ pre{
     height: 40px;
     text-shadow: 0.8px 0.8px darkblue;
     font-size: 20px;
-    border-style: dotted;
     border-color: darkblue;
     font-family: Serif;
     padding-top: 14px;
@@ -70,8 +69,8 @@ body {
     background-size: cover;
 }
 button {
-    width: 80px;
-    height: 30px;
+    width: 100px;
+    height: 60px;
     font-size: 20px;
     font-family: Serif;
     background-color: blue;
@@ -80,6 +79,7 @@ button {
     border-style:double;
     border-color: #A8C8E9;
     margin-bottom: 30px;
+    border-radius: 25px;
 }
 div {
     text-align: center;
@@ -98,7 +98,7 @@ h1{
     margin-top: 100px;
     margin-bottom: 5px;
     text-shadow: 2px 2px darkblue;
-    font-size: 90px;
+    font-size: 50px;
 }
 #result {
     margin-top: 0;
@@ -106,15 +106,17 @@ h1{
     background-color: #A8C8E9;
     height: 70px;
     font-family: Serif;
-    font-size: 20px;
+    font-size: 4px;
 }
 input[type=radio] {
     width: 20px;
     height: 20px;
+    border-radius: 25px;
 }
 label {
     color: black;
     font-size: 25px;
+    border-radius: 25px;
 }
 
 .modal {
@@ -125,16 +127,14 @@ label {
     top: 50%;
     transform: translate(-50%, -50%);
     justify-content: center;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    /*padding: 20px 20px 20px 20px;*/
-    /*margin-top: 100px;*/
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+    padding: 20px 20px 20px 20px;
     align-items: center;
     margin: 0;
+    border-radius: 25px;
   }
   
-  /* Modal Content/Box */
   .modal-content {
     display: none;
     position: fixed; 
@@ -143,20 +143,26 @@ label {
     top: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    background-color: #fefefe;
+    background-color: #A8C8E9;
     padding: 20px;
     border: 1px solid #888;
-    width: 600px; /* Could be more or less, depending on screen size */
+    width: 70%; 
     border: 1px solid #888;
-    height: 400px;
-
+    height: 80%;
+    border-radius: 25px;
+    font-size: 20px;
+    text-shadow:rgb(63, 93, 149);
+    text-align: left;
+    border-radius: 25px;
   }
   
   .close {
+    width: 50px;
+    height: 30px;
     color: #aaa;
     float: right;
-    font-size: 10%;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 20px;
 
   }
   #merg {
