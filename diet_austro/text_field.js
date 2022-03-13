@@ -289,6 +289,12 @@ function getDailyDiet(allergies, BMR, day){
   var lunchGrams = (100*lunchCal)/lunchFood.calories;
   var dinnerGrams = (100*dinnerCal)/dinnerFood.calories;
 
+  //get the maximum amount of grams per serving, so it doens't get too heavy just to get all the cals. In those cases a "desert would be acceptable"
+  var desertOk = 0
+  if(breakfastGrams>(400+(2*choices.weight)))desertOk = 1
+  if(lunchGrams>(500+(3*choices.weight)))desertOk = 1
+  if(dinnerGrams>(400+(2*choices.weight)))desertOk = 1
+
   //make the numbers easier for the user to understand
   breakfastGrams = breakfastGrams - (breakfastGrams%25);
   lunchGrams = lunchGrams - (lunchGrams%25);
@@ -300,7 +306,14 @@ function getDailyDiet(allergies, BMR, day){
   if(day == 5)var today = 'Friday';
   if(day == 6)var today = 'Saturday';
   if(day == 7)var today = 'Sunday';
-  return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}.`
+
+  
+  if(desertOk == 1){
+   return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: ${desertFood.calories} g of ${desertFood.name}.`
+  }
+  else {
+    return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: - .`
+  }
 }
 
 
