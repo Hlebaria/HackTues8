@@ -228,7 +228,11 @@ function button(){
      else{
       var BMR = calculate_cal(choices);
       var allergieList = allergie(choices);
-      writingFunc(getDailyDiet(allergieList, BMR));
+      var day = 1
+      do{
+      writingFunc(getDailyDiet(allergieList, BMR, day));
+        day++;
+      }while(day<=7)
      }
 
 }
@@ -260,7 +264,7 @@ function allergie(data){
   return alergie
 }
 
-function getDailyDiet(allergies, BMR){
+function getDailyDiet(allergies, BMR, day){
   var filteredBreakfast = breakfast.filter(x => !allergies.includes(x.all));
   var indexOfBreakfast = Math.floor(Math.random() * (filteredBreakfast.length - 1));
   var filteredLunch = breakfast.filter(x => !allergies.includes(x.all));
@@ -285,11 +289,31 @@ function getDailyDiet(allergies, BMR){
   var lunchGrams = (100*lunchCal)/lunchFood.calories;
   var dinnerGrams = (100*dinnerCal)/dinnerFood.calories;
 
+  //get the maximum amount of grams per serving, so it doens't get too heavy just to get all the cals. In those cases a "desert would be acceptable"
+  var desertOk = 0
+  if(breakfastGrams>(400+(2*choices.weight)))desertOk = 1
+  if(lunchGrams>(500+(3*choices.weight)))desertOk = 1
+  if(dinnerGrams>(400+(2*choices.weight)))desertOk = 1
+
   //make the numbers easier for the user to understand
   breakfastGrams = breakfastGrams - (breakfastGrams%25);
   lunchGrams = lunchGrams - (lunchGrams%25);
   dinnerGrams = dinnerGrams - (dinnerGrams%25);
-  return `Breakfast: ${breakfastGrams} of ${breakfastFood.name}. Lunch: ${lunchGrams} of ${lunchFood.name}. Dinner: ${dinnerGrams} of ${dinnerFood.name}.`
+  if(day == 1)var today = 'Monday';
+  if(day == 2)var today = 'Tuesday';
+  if(day == 3)var today = 'Wednesday';
+  if(day == 4)var today = 'Thirsday';
+  if(day == 5)var today = 'Friday';
+  if(day == 6)var today = 'Saturday';
+  if(day == 7)var today = 'Sunday';
+
+  
+  if(desertOk == 1){
+   return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: ${desertFood.calories} g of ${desertFood.name}.`
+  }
+  else {
+    return `${today} ->Breakfast: ${breakfastGrams}g of ${breakfastFood.name}. Lunch: ${lunchGrams}g of ${lunchFood.name}. Dinner: ${dinnerGrams}g of ${dinnerFood.name}. Desert: - .`
+  }
 }
 
 
