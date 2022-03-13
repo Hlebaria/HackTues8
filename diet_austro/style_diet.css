@@ -69,6 +69,14 @@ h1{
     vertical-align: middle;
 }
 
+#startingText {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
 pre{
     color: white;
     text-shadow: 1px 1px black;
