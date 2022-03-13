@@ -96,13 +96,14 @@ body{
 }
 
 label{
-    font-size: 30px;
-    color:white;
+    text-shadow: 0.8px 0.8px darkblue;
+    border-color: darkblue;
+    font-family: Serif;
 }
 p{
-    text-shadow: 1px 1px 3px black;
-    font-size:30px;
-    color: white;
+    text-shadow: 0.8px 0.8px darkblue;
+    border-color: darkblue;
+    font-family: Serif;
 }
 div {
     margin-bottom: 0;
@@ -124,4 +125,19 @@ button {
 }
 div{
     padding-left: 30px;
+}
+#questionsWrapper{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+#gender{
+    font-size: 25px;
+    
+}
+#Weight, #Height, #Age
+{
+    font-size: 20px;
+    
 }
